@@ -1,0 +1,73 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+    String str1="Direct Assignment";
+    char ch={'c','h','a','r'};
+    String str2=new String(ch);
+    String str3=new String("Through Object");
+    Scanner sc=new Scanner(System.in);
+    String str4=sc.nextLine();
+    System.out.println(str1);
+    System.out.println(str2);
+    System.out.println(str3);
+    System.out.println(str4);
+
+
+
+     
+    }
+}
+***************upper and lower cases in strings*********
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner sc= new Scanner(System.in);
+        String str1=sc.nextLine();
+
+        System.out.println("upper case: "+str1.toUpperCase());
+        System.out.println("Lower case: "+str1.toLowerCase());
+        System.out.println("orginal case: "+str1);
+
+
+
+     
+    }
+}
+input: vijay
+output:
+upper case: VIJAY
+Lower case: vijay
+orginal case: vijay
+*********finding the length of the string ********
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner sc= new Scanner(System.in);
+        String str=sc.nextLine();
+        int len=str.length();
+        System.out.println(len);
+    }
+}
+input: vijay
+output: 5
+************chaAt example********
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+        Scanner sc= new Scanner(System.in);
+        String str=sc.nextLine();
+        int len=str.length();
+        for(int i=0;i<len;i++)
+        {
+            System.out.println(str.charAt(i)+".");
+        }
+    }
+}
+input: vijay
+output: 
+v.
+i.
+j.
+a.
+y.
+**************

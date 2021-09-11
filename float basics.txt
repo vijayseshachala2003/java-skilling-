@@ -1,0 +1,130 @@
+class Test{
+    public static void main(String args[])
+    {
+        byte b=128;
+        System.out.println(b);
+    }
+}
+
+#2
+class Test{
+    public static void main(String ar[])
+    {
+        double d=1.2;
+        boolean b=true;
+        System.out.println(d);
+        System.out.println(b);
+    }
+}
+#3
+public class Test{
+    public static void main(String ar[])
+    {
+        float f=1;
+        float b=1.2;#this will give error message as it doesnt know the difference between float and double
+        float c=1.2323f;
+        System.out.println(f);
+        System.out.println(b);
+        System.out.println(c);
+    }
+}
+note: to avoid the error we shall use the b=1.2f to represent it as float
+public class Test{
+    public static void main(String ar[])
+    {
+        float f=1;
+        double  b=1.2;
+        float c=1.2323f;
+        System.out.println("float: "+f);
+        System.out.println("double: " +b);
+        System.out.println("float:" +c);
+    }
+}
+***************
+public class FloatExample{
+    public static void main(String ar[])
+    {
+        float d=978654321.1234567f;//here we are using some data .hence it is not so helpful
+        float  b=6.32146189454f;
+       
+        System.out.println("float: "+d);
+        
+        System.out.println("float:" +b);
+    }
+}
+output:
+float: 9.7865434E8
+float:6.3214617
+this is the reason why complier asks you to be sure while using float as we may lose some data
+***************
+public class FloatExample{
+    public static void main(String ar[])
+    {
+        double d=978654321.1234567;
+        double  b=6.32146189454;
+       
+        System.out.println("double "+d);
+        
+        System.out.println("double:" +b);
+    }
+}***hence we use double which gives the complete data in its range , it will shorten if the value is beyond its range 
+**********************
+public class Test{
+    public static void main(String ar[])
+    {
+        int a=10,b=017,c=0X3A;//if zero is taken before the numbers it will consider octal  value and X is considered as the hexadecimal value
+        System.out.println("int:"+a);
+        System.out.println("octa int:"+b);
+        System.out.println("hexa int:"+c);
+    }
+}
+output:
+int:10
+octa int:15
+hexa int:58
+*************
+
+****************
+Parsing problem
+public class ParseEx{ 
+    public static void main(String args[])
+    {
+        int i1=Integer.parseInt(args[0]);
+        int i2=Integer.parseInt(args[1]);
+        System.out.println(i1+i2);
+        System.out.println(i1+i2+args[2]);
+        
+        
+        
+    }
+}
+Input:
+10 20 50 
+output:
+30
+3050
+
+
+//reading the non string inputs through command line arguments
+
+example:
+take two inputs from the command line arguments and store a/b value in c and print c
+public class ParseEx{ 
+    public static void main(String args[])
+    {
+        int a=Integer.parseInt(args[0]);
+        float b=Float.parseFloat(args[1]);
+        float c=a/b;
+        
+        System.out.println(c);
+        
+        
+        
+    }
+}
+input:
+10 20
+output:
+0.5
+
+
